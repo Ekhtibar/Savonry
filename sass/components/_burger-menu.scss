@@ -1,0 +1,64 @@
+@import '../variables';
+@import '../fonts';
+
+
+.phone-menu-nav{
+    width: 100%;
+    position: absolute;
+    background: #ffffff;
+    z-index: 2;
+}
+.phone-menu-nav__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px 20px 25px;
+    border-bottom: 1px solid $light-grey;
+}
+.phone-menu-close{
+    cursor: pointer;
+}
+.burger-app-bar__and__view{
+    display: grid;
+    grid-template-columns: 35% 70%;
+}
+.burger-app-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 35px;
+    border-right: 1px solid $light-grey;
+    overflow: hidden;
+}
+.burger-app-bar_item{
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: $navig;
+    text-transform: uppercase;
+    font-weight: $regular;
+}
+.burger-app-bar_item__active{
+    color: $light-grey;
+}
+.burger-app-bar__view{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px 35px;
+    overflow: hidden;
+}
+.burger-app-bar__view-item{
+    font-family: $light;
+    text-transform:none;
+}
+
+
+@media (max-width: 480px){
+    .burger-app-bar__and__view{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .burger-app-bar__view{
+        display: none;
+    }
+}

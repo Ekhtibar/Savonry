@@ -1,15 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Savonry</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <header class="header">
+      <div class="phone-menu-nav">
+        <div class="phone-menu-nav__head">
+          <div class="phone-menu-nav__logo">
+            <img src="/assets/images/desct_black_logo.svg" alt="" class="phone-menu-logo__img" />
+          </div>
+          <div class="phone-menu-close">
+            <img src="/assets/icons/cross-x.svg" alt="" class="phone-menu-close__img" />
+          </div>
+        </div>
+        <div class="burger-app-bar__and__view">
+            <div class="burger-app-bar">
+                <div class="burger-app-bar_item">Акции</div>
+                <div class="burger-app-bar_item">Новинки</div>
+                <div class="burger-app-bar_item">Лицо</div>
+                <div class="burger-app-bar_item">Ванна и душ</div>
+                <div class="burger-app-bar_item burger-app-bar_item__active">Тело</div>
+                <div class="burger-app-bar_item">Волосы</div>
+                <div class="burger-app-bar_item">Для него</div>
+                <div class="burger-app-bar_item">Подарки</div>
+                <div class="burger-app-bar_item">Серии</div>
+                <div class="burger-app-bar_item">Аксессуары</div>
+                <div class="burger-app-bar_item">Для клиента</div>
+                <div class="burger-app-bar_item">Новости</div>
+                <div class="burger-app-bar_item">Статьи</div>
+            </div>
+            <div class="burger-app-bar__view">
+                <a href="#" class="burger-app-bar__view-item">Антибактериальные  средства</a>
+                <a href="#" class="burger-app-bar__view-item">Антицеллюлитная серия Slim&Sexy</a>
+                <a href="#" class="burger-app-bar__view-item">Антицеллюлитная скраб-маска</a>
+                <a href="#" class="burger-app-bar__view-item">Гель алоэ вера</a>
+                <a href="#" class="burger-app-bar__view-item">Дезодоранты</a>
+                <a href="#" class="burger-app-bar__view-item">Кремы для тела</a>
+                <a href="#" class="burger-app-bar__view-item">Массажные плитки</a>
+                <a href="#" class="burger-app-bar__view-item">Натуральные масла</a>
+                <a href="#" class="burger-app-bar__view-item">Обертывание</a>
+                <a href="#" class="burger-app-bar__view-item">Парфюмированные спреи для тела</a>
+                <a href="#" class="burger-app-bar__view-item">Скрабы для тела</a>
+                <a href="#" class="burger-app-bar__view-item">Солнцезащитные средства</a>
+                <a href="#" class="burger-app-bar__view-item">Средства для ног</a>
+                <a href="#" class="burger-app-bar__view-item">Средства для рука</a>
+                <a href="#" class="burger-app-bar__view-item">Щетки для сухого массажа</a>
+            </div>
+        </div>
+      </div>
+      <div class="header-container container">
+        <div class="burger-menu">
+          <!-- <img src="./assets/icons/burger-menu.svg" alt="" class="burger-menu_img"> -->
+          <spna class="burger-menu-line"></spna>
+          <spna class="burger-menu-line"></spna>
+          <spna class="burger-menu-line"></spna>
+        </div>
 
+        <nav class="navbar">
+          <a href="#" class="navbar_link">статьи</a>
+          <a href="#" class="navbar_link">новости</a>
+          <div class="navbar_dropdown">
+            <div class="navabar_dropdown-head">
+              <a href="#" class="navbar_link">для клиента </a>
+              <img
+                src="/assets/icons/down_arrow.svg"
+                alt=""
+                class="navabr_dropdown-head__arrow"
+              />
+            </div>
+            <div class="navbar_dropdown__list">
+              <a href="#" class="navabr_dropdown__list-item">Item 1</a>
+              <a href="#" class="navabr_dropdown__list-item">Item 2</a>
+              <a href="#" class="navabr_dropdown__list-item">Item 3</a>
+            </div>
+          </div>
+        </nav>
+        <div class="logo">
+          <a href="#">
+            <picture>
+              <source
+                srcset="./assets/icons/logo_small.svg"
+                media="(max-width: 500px)"
+              />
+              <img
+                src="./assets/images/desct_black_logo.svg"
+                alt=""
+                class="logo-img"
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="menu">
+          <div class="search">
+            <img
+              src="/assets/icons/search.svg"
+              alt=""
+              class="search-img menu-icons"
+            />
+          </div>
+          <div class="phone">
+            <a href="#" class="phone__link">
+              <img
+                src="/assets/icons/phone.svg"
+                alt=""
+                class="phone-img menu-icons"
+              />
+            </a>
+          </div>
+          <div class="profile">
+            <a href="#" class="profile__link">
+              <img
+                src="/assets/icons/prfile_person.svg"
+                alt=""
+                class="phone-img menu-icons"
+              />
+            </a>
+          </div>
+          <div class="cart">
+            <a href="#" class="cart__link">
+              <img
+                src="/assets/icons/cart.svg"
+                alt=""
+                class="phone-img menu-icons"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="content container">content</div>
+    <footer class="footer container">footer</footer>
 
-    <script src="main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
