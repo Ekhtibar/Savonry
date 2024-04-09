@@ -3,10 +3,12 @@
 
 
 .phone-menu-nav{
+    display: none;
     width: 100%;
     position: absolute;
     background: #ffffff;
     z-index: 2;
+    transition: .3s ease;
 }
 .phone-menu-nav__head{
     display: flex;
@@ -51,9 +53,15 @@
     font-family: $light;
     text-transform:none;
 }
+.open-menu{
+    display: block;
 
+}
 
 @media (max-width: 480px){
+    .burger-app-bar{
+        border-right: none;
+    }
     .burger-app-bar__and__view{
         display: grid;
         grid-template-columns: 100%;
